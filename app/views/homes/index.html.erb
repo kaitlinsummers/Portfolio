@@ -1,0 +1,29 @@
+
+<h3><center> <u>KAITLIN</u> <u>LITTLEJOHN</u></h3>
+<h4><center>Aspiring Web Developer / Community Manager</h4>
+
+<h6><center>Community is everything; this is what I’ve come to learn. No matter the field, the profession, the preference or the people- community can make or break whatever you’re trying to cultivate. People are my passion and the thought of bringing people and ideas together as a part of my career is thrilling. I am a very detail-oriented, organizationally centered, plan-based person. I love to help others create and execute their visions. I first encountered the tech scene in Charlotte by independently attending a Friday TechTalk at Skookum Digital Works. There is where I first heard Betsy share about Tech Talent South and the Coding Immersion Program they run. This is when I sought her out for coffee and made the choice to step into this community officially. Since that fateful day, I have made numerous, long term connections. Also my weekly involvement in the teachings at @809 for our Kids Code Thursdays through TTS has been so beneficial to me. Just in the short time that I have been involved in the tech community here in Charlotte, it has impacted me greatly. I love the life that exists already in this community but even more so, I desire to have a hand in seeing these great visions (big or minuscule) come to pass. I have heart and am an extremely committed and loyal worker. I would love this opportunity to help people, connect our community more and get involved in any way possible.</h6>
+</center>
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+   
+    <% @homes.each do |home| %>
+      <tr>
+        <td><%= link_to 'Show', home %></td>
+        <td><%= link_to 'Edit', edit_home_path(home) %></td>
+        <td><%= link_to 'Destroy', home, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
