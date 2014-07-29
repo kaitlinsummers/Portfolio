@@ -1,17 +1,29 @@
-<h1>CONTACT</h1>
+<h1></h1>
 
 <table>
   <thead>
+
+    <center> <h2> Kaitlin S. Littlejohn</h2>
+<center> <%= image_tag('germankait.jpg', width: 400, height: 300); %>
+
+
+<h5> Connect with me at <a href="mailto:kaitsummers@gmail.com?Subject=Hello%20again"target=" top">kaitsummers@gmail.com <br></center>
     <tr>
       <!-- <th>Email</th>
       <th>Comment</th> -->
       <th colspan="3"></th>
     </tr>
+<center> 
+    <li><%= link_to "TWIITER", "https://twitter.com/kaitsummers", :target => "_blank" %></li>
+                <li><%= link_to "FACEBOOK", "https://www.facebook.com/kaitlin.littlejohn", :target => "_blank"  %></li>
+                <li><%= link_to "LINKEDIN", "https://www.linkedin.com/profile/view?id=348379389&trk=nav_responsive_tab_profile_pic", :target => "_blank"  %></li>
+              </center>
   </thead>
+
 
   <tbody>
 
-   <center> If
+   <center>
     <% @contacts.each do |contact| %>
       <tr>
         <td><%= contact.email %></td>
@@ -26,4 +38,4 @@
 
 <br>
 
-<%= link_to 'Contact Me', new_contact_path %>
+

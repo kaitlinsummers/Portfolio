@@ -1,4 +1,4 @@
-<h1>PORTFOLIO</h1>
+<center><h1>PROJECTS</h1></center>
 
 <table>
   <thead>
@@ -8,17 +8,12 @@
   </thead>
 
   <tbody>
+<br><br>
+<h5>Travel over to my Github account to explore some of my projects in the works </h5>
 
-  <center>  He said I was finally the husband, <br>
-That most the time I wasn't.<br>
-And I became a friend a friend would like to have.<br>
-And all the sudden goin' fishing, <br>
-Wasn't such an imposition.<br>
-And I went three times that year I lost my dad.<br>
-Well I finally read the good book,<br>
-And I took a good long hard look at what I'd do<br>
-If I could do it all again.<br>
-And then.
+<h5><li><%= link_to "GITHUB", "https://github.com/kaitlinsummers?tab=repositories", :target => "_blank"  %></li> </h5>
+
+  <center> 
     <% @projects.each do |project| %>
       <tr>
         <td><%= link_to 'Show', project %></td>
