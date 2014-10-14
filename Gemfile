@@ -7,6 +7,7 @@ gem 'rails', '4.1.0'
 #gem 'sqlite3'
 #Mark added this
 #gem 'mysql2'
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
